@@ -13,15 +13,11 @@ from middlewares import AccessMiddleware
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = os.getenv("TELEGRAM_API_TOKEN")
-PROXY_URL = os.getenv("TELEGRAM_PROXY_URL")
-PROXY_AUTH = aiohttp.BasicAuth(
-    login=os.getenv("TELEGRAM_PROXY_LOGIN"),
-    password=os.getenv("TELEGRAM_PROXY_PASSWORD")
-)
-ACCESS_ID = os.getenv("TELEGRAM_ACCESS_ID")
+API_TOKEN = os.getenv("6642781222:AAEzqWk8IdeZXghlS7xl57qkcwIKr1kOFns")
 
-bot = Bot(token=API_TOKEN, proxy=PROXY_URL, proxy_auth=PROXY_AUTH)
+ACCESS_ID = os.getenv("2142502767")
+
+bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp.middleware.setup(AccessMiddleware(ACCESS_ID))
 
