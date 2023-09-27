@@ -13,9 +13,9 @@ from middlewares import AccessMiddleware
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = os.getenv("6642781222:AAEzqWk8IdeZXghlS7xl57qkcwIKr1kOFns")
+API_TOKEN = "6642781222:AAEzqWk8IdeZXghlS7xl57qkcwIKr1kOFns"
 
-ACCESS_ID = os.getenv("2142502767")
+ACCESS_ID = "2142502767"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)

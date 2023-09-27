@@ -7,4 +7,4 @@ finance.db
 *.pid
 *.out
 .ipynb_checkpoints
-env/
+env22/
